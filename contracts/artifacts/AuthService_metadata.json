@@ -1,0 +1,75 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "userLogin",
+						"type": "string"
+					}
+				],
+				"name": "login",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "userAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "status",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/AuthService.sol": "AuthService"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/AuthService.sol": {
+			"keccak256": "0x45c7773b5179bcaf6ed7aac56804081b1afe0a689e48c106fcfcf7e3b47ddc26",
+			"license": "UNLICENSED",
+			"urls": [
+				"bzz-raw://4092c930f8d5b19e4e2e11990b77019c472f01fe30e4979c6a817d6d72190154",
+				"dweb:/ipfs/QmdzynTfkrLY8udGVTeirXLckt5AGm1KBx8Ehq1SYPvoUK"
+			]
+		}
+	},
+	"version": 1
+}

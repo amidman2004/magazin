@@ -1,0 +1,716 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_bank",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "shopAddr",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "number",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "city",
+						"type": "string"
+					}
+				],
+				"name": "add_shop",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "login",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "password",
+						"type": "string"
+					}
+				],
+				"name": "auth",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "address",
+								"name": "userAddr",
+								"type": "address"
+							},
+							{
+								"internalType": "string",
+								"name": "login",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "password",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "fio",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "status",
+								"type": "string"
+							}
+						],
+						"internalType": "struct User",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "bank",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "userLogin",
+						"type": "string"
+					},
+					{
+						"internalType": "bool",
+						"name": "isAccept",
+						"type": "bool"
+					}
+				],
+				"name": "check_request",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "autor",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "currentRole",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "desiredRole",
+						"type": "string"
+					},
+					{
+						"internalType": "bool",
+						"name": "checked",
+						"type": "bool"
+					}
+				],
+				"name": "create_request",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "shopAddr",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "autorLogin",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "message",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "likes",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "dislikes",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "mark",
+						"type": "uint256"
+					}
+				],
+				"name": "create_review",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "shopAddr",
+						"type": "address"
+					}
+				],
+				"name": "delete_shop",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "shopAddr",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "autorLogin",
+						"type": "string"
+					}
+				],
+				"name": "dislike_review",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "get_admins",
+				"outputs": [
+					{
+						"internalType": "string[]",
+						"name": "",
+						"type": "string[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "get_requests",
+				"outputs": [
+					{
+						"internalType": "string[]",
+						"name": "",
+						"type": "string[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "get_shops",
+				"outputs": [
+					{
+						"internalType": "address[]",
+						"name": "",
+						"type": "address[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "shopAddr",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "userLogin",
+						"type": "string"
+					}
+				],
+				"name": "get_user_review",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "autorLogin",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "message",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "likes",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "dislikes",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "mark",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct Review",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "shopAddr",
+						"type": "address"
+					}
+				],
+				"name": "give_shop_money",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "shopAddr",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "autorLogin",
+						"type": "string"
+					}
+				],
+				"name": "like_review",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "userAddr",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "login",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "password",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "fio",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "status",
+						"type": "string"
+					}
+				],
+				"name": "register_admin",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "userAddr",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "login",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "password",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "fio",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "status",
+						"type": "string"
+					}
+				],
+				"name": "register_buyer",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "userAddr",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "login",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "password",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "fio",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "status",
+						"type": "string"
+					},
+					{
+						"internalType": "address",
+						"name": "shopAddr",
+						"type": "address"
+					}
+				],
+				"name": "register_seller",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "shopDebts",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "shopSellers",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "shops",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "number",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "city",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "shopsReviews",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"name": "userActions",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"name": "userRequest",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "autor",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "currentRole",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "desiredRole",
+						"type": "string"
+					},
+					{
+						"internalType": "bool",
+						"name": "checked",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					},
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "userReviews",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "autorLogin",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "message",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "likes",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "dislikes",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "mark",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"name": "users",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "userAddr",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "login",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "password",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "fio",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "status",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Database.sol": "Database"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Database.sol": {
+			"keccak256": "0x926454de1042f3536e5263bf3243903bb50388c448baba0493afa645477e2787",
+			"license": "Unlicense",
+			"urls": [
+				"bzz-raw://182cb6f635d5e01657dc0d9297d80e8ad87354990ef852c556453529a5a96d38",
+				"dweb:/ipfs/QmR9SADWxKv9FN5zdheQouUC4SUtRo8u6iJdwrJwLzLhkT"
+			]
+		}
+	},
+	"version": 1
+}

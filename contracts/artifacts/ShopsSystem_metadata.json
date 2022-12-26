@@ -1,0 +1,572 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "id",
+						"type": "string"
+					},
+					{
+						"internalType": "bool",
+						"name": "isAccept",
+						"type": "bool"
+					}
+				],
+				"name": "checkRequest",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "shopAddr",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "userMessage",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "id",
+						"type": "string"
+					},
+					{
+						"internalType": "int256",
+						"name": "grade",
+						"type": "int256"
+					}
+				],
+				"name": "createReview",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "shopAddr",
+						"type": "address"
+					}
+				],
+				"name": "deleteShop",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "id",
+						"type": "string"
+					}
+				],
+				"name": "disLikeReview",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address payable",
+						"name": "shopAddr",
+						"type": "address"
+					}
+				],
+				"name": "doShopDebt",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "id",
+						"type": "string"
+					}
+				],
+				"name": "downRequestToByer",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getAdminInfo",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "login",
+						"type": "string"
+					},
+					{
+						"internalType": "string[]",
+						"name": "userRequests",
+						"type": "string[]"
+					},
+					{
+						"internalType": "string[]",
+						"name": "adminList",
+						"type": "string[]"
+					},
+					{
+						"internalType": "address[]",
+						"name": "sellersAddr",
+						"type": "address[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getAllRequests",
+				"outputs": [
+					{
+						"internalType": "string[]",
+						"name": "requestsId",
+						"type": "string[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getBuyerInfo",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "userLogin",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "fio",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "balance",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string[]",
+						"name": "reviews",
+						"type": "string[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "id",
+						"type": "string"
+					}
+				],
+				"name": "getRequestById",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "userAddr",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "currentRole",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "desiredRole",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "id",
+						"type": "string"
+					}
+				],
+				"name": "getReviewById",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "autorAddr",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "shopAddr",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "reviewMessage",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "likeCount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "disLikeCount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "int256",
+						"name": "grade",
+						"type": "int256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getSellerInfo",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "sellerLogin",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "fio",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "city",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "shopNumber",
+						"type": "string"
+					},
+					{
+						"internalType": "string[]",
+						"name": "reviews",
+						"type": "string[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "sellerAddr",
+						"type": "address"
+					}
+				],
+				"name": "getSellerInfoByAddr",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "sellerLogin",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "fio",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "city",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "shopNumber",
+						"type": "string"
+					},
+					{
+						"internalType": "string[]",
+						"name": "reviews",
+						"type": "string[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "id",
+						"type": "string"
+					}
+				],
+				"name": "likeReview",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "userLogin",
+						"type": "string"
+					}
+				],
+				"name": "login",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "userAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "status",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "adminAddr",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "fio",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "userLogin",
+						"type": "string"
+					}
+				],
+				"name": "regAdmin",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "fio",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "userLogin",
+						"type": "string"
+					}
+				],
+				"name": "registerAdmin",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "bankLogin",
+						"type": "string"
+					},
+					{
+						"internalType": "address",
+						"name": "bankAddr",
+						"type": "address"
+					}
+				],
+				"name": "registerBank",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "fio",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "userLogin",
+						"type": "string"
+					},
+					{
+						"internalType": "address",
+						"name": "userAddr",
+						"type": "address"
+					}
+				],
+				"name": "registerBuyer",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "providerLogin",
+						"type": "string"
+					},
+					{
+						"internalType": "address",
+						"name": "providerAddr",
+						"type": "address"
+					}
+				],
+				"name": "registerProvider",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "fio",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "userLogin",
+						"type": "string"
+					},
+					{
+						"internalType": "address",
+						"name": "userAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "shopAddr",
+						"type": "address"
+					}
+				],
+				"name": "registerSeller",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "shopAddr",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "number",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "city",
+						"type": "string"
+					}
+				],
+				"name": "registerShop",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "id",
+						"type": "string"
+					}
+				],
+				"name": "requestToSeller",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Shops.sol": "ShopsSystem"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/AuthService.sol": {
+			"keccak256": "0x45c7773b5179bcaf6ed7aac56804081b1afe0a689e48c106fcfcf7e3b47ddc26",
+			"license": "UNLICENSED",
+			"urls": [
+				"bzz-raw://4092c930f8d5b19e4e2e11990b77019c472f01fe30e4979c6a817d6d72190154",
+				"dweb:/ipfs/QmdzynTfkrLY8udGVTeirXLckt5AGm1KBx8Ehq1SYPvoUK"
+			]
+		},
+		"contracts/Shops.sol": {
+			"keccak256": "0xf5fcfe4ae26c533b8d7bf964dc949f5167efcb3bf4f08a00f66b305d557710ed",
+			"license": "UNLICENSED",
+			"urls": [
+				"bzz-raw://f91448ccdcecb2d73851cb7bb3828ce746a40a2583df8599da1b880fe634cc6d",
+				"dweb:/ipfs/QmQc8grB5rRgX5jQm5CV3bw3THRmoryh18sQ8SUzyiwqAG"
+			]
+		}
+	},
+	"version": 1
+}

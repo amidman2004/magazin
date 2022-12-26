@@ -1,0 +1,32 @@
+=============== Oct 31, 2022 (+04) ===============
+13:17:36.360835 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+13:17:36.369174 db@open opening
+13:17:36.370419 version@stat F·[] S·0B[] Sc·[]
+13:17:36.372496 db@janitor F·2 G·0
+13:17:36.372539 db@open done T·2.828682ms
+13:17:36.388099 db@close closing
+13:17:36.388253 db@close done T·145.687µs
+=============== Oct 31, 2022 (+04) ===============
+13:17:54.026107 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+13:17:54.026339 version@stat F·[] S·0B[] Sc·[]
+13:17:54.026380 db@open opening
+13:17:54.026440 journal@recovery F·1
+13:17:54.035531 journal@recovery recovering @1
+13:17:54.042222 memdb@flush created L0@2 N·21 S·1KiB "D\xf2\xb2..\a\xb2\xd0,v10":"\xe6\x1e\xc0..\xfe\xa8x,v9"
+13:17:54.055256 version@stat F·[1] S·1KiB[1KiB] Sc·[0.25]
+13:17:54.063920 db@janitor F·3 G·0
+13:17:54.063983 db@open done T·37.579593ms
+14:05:43.565008 db@close closing
+14:05:43.565178 db@close done T·164.126µs
+=============== Oct 31, 2022 (+04) ===============
+16:50:16.864356 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+16:50:16.864605 version@stat F·[1] S·1KiB[1KiB] Sc·[0.25]
+16:50:16.864655 db@open opening
+16:50:16.864723 journal@recovery F·1
+16:50:16.874032 journal@recovery recovering @3
+16:50:16.945530 memdb@flush created L0@5 N·25216 S·1MiB "\x00\x17X..amS,v25097":"\xff\xdb{..\x13t\x13,v24419"
+16:50:16.954871 version@stat F·[2] S·1MiB[1MiB] Sc·[0.50]
+16:50:16.961103 db@janitor F·4 G·0
+16:50:16.961359 db@open done T·96.673489ms
+16:51:33.869099 db@close closing
+16:51:33.869327 db@close done T·216.647µs

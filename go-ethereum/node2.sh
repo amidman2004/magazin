@@ -1,0 +1,2 @@
+#!/bin/bash
+geth --datadir node2 --port "5555" --bootnodes enode://0d89ab9d15e0032834d0c7dd66e9f25e77e28fddd205620ed376616a509444029dd34ae0b855b7a4a22c391d9acb81af9d90c5745c27f1cfbcf0d6eca7baddc9@127.0.0.1:0?discport=1111 --unlock 0x99764585fd400e69ea13e355BB8E2ac29FF4640c --password miner.txt --mine --miner.etherbase 0x99764585fd400e69ea13e355BB8E2ac29FF4640c --authrpc.port 8550
